@@ -70,6 +70,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-ZS-sro">
+                                <rect key="frame" x="87" y="573" width="217" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -148,12 +155,13 @@
                     <connections>
                         <outlet property="loginTF" destination="j2H-ik-qfw" id="1D7-3X-4ac"/>
                         <outlet property="passwordTF" destination="zeY-Yn-6zM" id="SiG-tU-iQy"/>
+                        <outlet property="resultLabel" destination="ZQo-ZS-sro" id="tHs-kI-6gK"/>
                         <segue destination="sbV-P1-jan" kind="show" identifier="detailSegue" id="cZV-08-63C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.91071428571428" y="-28.985507246376812"/>
+            <point key="canvasLocation" x="129.23076923076923" y="-29.14691943127962"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Oyx-UG-uRK">
@@ -194,9 +202,11 @@
                     <navigationItem key="navigationItem" id="oec-ko-7WL"/>
                     <connections>
                         <outlet property="label" destination="sut-5x-V0d" id="Dzs-ya-7v3"/>
+                        <segue destination="hmE-D3-vAf" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="mSS-sj-evV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32c-b7-GUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hmE-D3-vAf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="847.69230769230762" y="-29.14691943127962"/>
         </scene>
