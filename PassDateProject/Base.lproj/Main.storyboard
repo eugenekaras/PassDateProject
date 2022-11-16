@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="326" id="uXw-uN-WIz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="uXw-uN-WIz"/>
@@ -60,9 +60,13 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TC4-SC-RFv"/>
+                                    <segue destination="sbV-P1-jan" kind="show" id="eBc-LB-KKl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass Date Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kUZ-OY-1Nv">
-                                <rect key="frame" x="32.333333333333371" y="59" width="325.33333333333326" height="54"/>
+                                <rect key="frame" x="32.333333333333343" y="59" width="325.33333333333326" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -142,10 +146,59 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="loginTF" destination="j2H-ik-qfw" id="1D7-3X-4ac"/>
+                        <outlet property="passwordTF" destination="zeY-Yn-6zM" id="SiG-tU-iQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129.91071428571428" y="-28.985507246376812"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Oyx-UG-uRK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="sbV-P1-jan" customClass="SecondViewController" customModule="PassDateProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="riN-6v-lFW" customClass="Second">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sut-5x-V0d">
+                                <rect key="frame" x="153.66666666666666" y="149" width="83" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qa-eL-YWB">
+                                <rect key="frame" x="159.66666666666666" y="609" width="71" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackTapped:" destination="sbV-P1-jan" eventType="touchUpInside" id="q9O-bV-8mU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BXa-nN-tEo"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1qa-eL-YWB" firstAttribute="centerX" secondItem="BXa-nN-tEo" secondAttribute="centerX" id="BlV-c2-V2e"/>
+                            <constraint firstItem="sut-5x-V0d" firstAttribute="top" secondItem="BXa-nN-tEo" secondAttribute="top" constant="102" id="HlC-IP-iqM"/>
+                            <constraint firstItem="sut-5x-V0d" firstAttribute="centerX" secondItem="BXa-nN-tEo" secondAttribute="centerX" id="Y0s-ob-CA3"/>
+                            <constraint firstItem="BXa-nN-tEo" firstAttribute="bottom" secondItem="1qa-eL-YWB" secondAttribute="bottom" constant="166" id="jOf-tC-VAF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oec-ko-7WL"/>
+                    <connections>
+                        <outlet property="label" destination="sut-5x-V0d" id="Dzs-ya-7v3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32c-b7-GUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.69230769230762" y="-29.14691943127962"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,7 @@
 		E93836AE292566D1007A6205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93836AD292566D1007A6205 /* Assets.xcassets */; };
 		E93836B1292566D1007A6205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93836AF292566D1007A6205 /* LaunchScreen.storyboard */; };
 		E93836B929256713007A6205 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E93836B829256713007A6205 /* .gitignore */; };
+		E967F6E92925859900497421 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967F6E82925859900497421 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E93836B0292566D1007A6205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E93836B2292566D1007A6205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E93836B829256713007A6205 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E967F6E82925859900497421 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E93836A4292566D0007A6205 /* AppDelegate.swift */,
 				E93836A6292566D0007A6205 /* SceneDelegate.swift */,
 				E93836A8292566D0007A6205 /* ViewController.swift */,
+				E967F6E82925859900497421 /* SecondViewController.swift */,
 				E93836AA292566D0007A6205 /* Main.storyboard */,
 				E93836AD292566D1007A6205 /* Assets.xcassets */,
 				E93836AF292566D1007A6205 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E967F6E92925859900497421 /* SecondViewController.swift in Sources */,
 				E93836A9292566D0007A6205 /* ViewController.swift in Sources */,
 				E93836A5292566D0007A6205 /* AppDelegate.swift in Sources */,
 				E93836A7292566D0007A6205 /* SceneDelegate.swift in Sources */,
